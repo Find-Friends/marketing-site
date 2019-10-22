@@ -14,11 +14,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media @mobile {
+            flex-direction: column;
+        }
     
             h1 {
                 padding-left: 10px;;
                 font-size: 2rem;
                 color: @btnColor;
+
+                @media @mobile {
+                    margin-bottom: 15px ;
+                }
             }
             a {
                 text-decoration: none;

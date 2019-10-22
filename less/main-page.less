@@ -9,10 +9,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        @media @mobile {
-            max-width: 500px;
-        }
     }
     .middleText {
         max-width: 1000px;
@@ -20,10 +16,6 @@
         text-align: center;
         border: 1px solid @borderColor;
         background: @bgColor;
-
-        @media @mobile {
-            max-width: 500px;
-        }
 
             h2 {
                     margin: 25px;                
@@ -77,7 +69,9 @@
                         flex-direction: column;
 
                         @media @mobile {
-                            width: 100%;
+                            width:95%;
+                            margin: 0 auto;
+                            padding: 0 3%;
                         }
                             
                             img {
