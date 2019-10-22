@@ -184,7 +184,7 @@ h2 {
   max-height: 1000px;
   text-align: center;
   border: 1px solid #c2c1c1;
-  background: rgba(212, 212, 212, 0.842);
+  background: #d4d4d4d7;
 }
 .homePage .middleText h2 {
   margin: 25px;
@@ -204,6 +204,11 @@ h2 {
   height: 40px;
   font-size: 1.3rem;
 }
+.homePage .middleText button:hover {
+  transition: 0.25s;
+  background: black;
+  color: #89daf5;
+}
 .homePage .mainInfo {
   margin-top: 20px;
 }
@@ -212,28 +217,64 @@ h2 {
   margin-bottom: 25px;
 }
 .homePage .mainInfo .bottomContent {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.homePage .mainInfo .bottomContent .cards {
-  width: 32%;
+.homePage .mainInfo .bottomContent .cardContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.homePage .mainInfo .bottomContent .cardContent .cards {
+  width: 30%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.homePage .mainInfo .bottomContent .cards .cardImg {
-  margin-bottom: 20px;
+.homePage .mainInfo .bottomContent .cardContent .cards img {
+  width: 100%;
 }
-.homePage .mainInfo .bottomContent .cards .cardText {
-  margin-bottom: 5%;
-  max-height: 65px;
+.homePage .mainInfo .bottomContent .cardContent .cards p {
+  margin-top: 5%;
 }
-.homePage .mainInfo .bottomContent .cards button {
-  margin-top: 25px;
+.homePage .mainInfo .buttons {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.homePage .mainInfo .buttons .button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   border: 1px solid #c2c1c1;
   border-radius: 15px;
   color: black;
   background: #89daf5;
-  width: 130px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   font-size: 1.1rem;
+}
+.homePage .mainInfo .buttons .button:hover {
+  transition: 0.25s;
+  background: black;
+  color: #89daf5;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footerNav {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+footer .footerNav a {
+  text-decoration: none;
+  color: black;
+}
+footer p {
+  color: #d4d4d4d7;
 }

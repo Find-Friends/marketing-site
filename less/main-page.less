@@ -14,7 +14,7 @@
         max-height: 1000px;
         text-align: center;
         border: 1px solid @borderColor;
-        background: rgba(212, 212, 212, 0.842);
+        background: #d4d4d4d7;
 
             h2 {
                     margin: 25px;                
@@ -38,36 +38,43 @@
             }
 
             .bottomContent {
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
+    
+                .cardContent {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
 
                     .cards {
-                        width: 32%;
+                        width: 30%;
                         text-align: center;
-
-                            // p{
-                            //     margin-top: 20px;
-                            // }
-
-                            // button {
-                            //     margin-top: 2%;;
-                            //     .customBtn(50px, 130px,@btnColor, @btnTextColor,@borderColor, 1.1rem)
-                            // }
-
-                            .cardImg {
-                                margin-bottom: 20px;
+                        display: flex;
+                        flex-direction: column;
+                            
+                            img {
+                                width: 100%;
                             }
-                            .cardText {
-                                margin-bottom: 5%;
-                                max-height: 65px;
+                             p{
+                                margin-top: 5%;
                             }
-                            button {
-                                margin-top: 25px;
-                                .customBtn(50px, 130px,@btnColor, @btnTextColor,@borderColor, 1.1rem)
-                            }
-
-                    }
+                    } 
+                }
             }
-    }
+
+            .buttons {
+                margin: 25px 0;
+                display: flex;
+                justify-content: space-around;
+                .button {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .customBtn(60px, 150px,@btnColor, @btnTextColor,@borderColor, 1.1rem)
+                }
+            }
+    }  
        
 }
