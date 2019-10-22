@@ -169,17 +169,31 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 627px) {
   .outterNav .navBar {
     flex-direction: column;
+  }
+}
+.outterNav .navBar .logoAndName {
+  display: flex;
+  align-items: center;
+}
+.outterNav .navBar .logoPic {
+  max-width: 35px;
+  margin-left: 10px;
+}
+@media (max-width: 627px) {
+  .outterNav .navBar .logoPic {
+    margin-bottom: 15px;
   }
 }
 .outterNav .navBar h1 {
   padding-left: 10px;
   font-size: 2rem;
   color: #89daf5;
+  margin-top: 12px;
 }
-@media (max-width: 600px) {
+@media (max-width: 627px) {
   .outterNav .navBar h1 {
     margin-bottom: 15px ;
   }
@@ -200,6 +214,10 @@ h2 {
 }
 .homePage {
   margin: 30px auto;
+}
+.homePage #home {
+  max-width: 100px;
+  width: 25%;
 }
 .homePage .mainImg {
   margin-top: 73px;
@@ -265,8 +283,9 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-size: 1.2rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 627px) {
   .homePage .mainInfo .bottomContent .cardContent {
     flex-direction: column;
   }
@@ -277,7 +296,7 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 600px) {
+@media (max-width: 627px) {
   .homePage .mainInfo .bottomContent .cardContent .cards {
     width: 95%;
     margin: 0 auto;
