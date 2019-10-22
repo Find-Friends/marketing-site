@@ -1,20 +1,42 @@
-.navBar{
-    max-width: 1367px;
-    width: 100%;
-    margin: 5px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
 
-        h1 {
-            margin-left: -15px;
-            font-size: 2rem;
-            color: @btnColor;
-        }
-        a{
-            text-decoration: none;
-            font-size: 1.2rem;
-            margin: 15px;
-        }
+.outterNav {
+    margin: 0 auto;
+    max-width: 1367px;
+    .navBar{
+        max-width: 1367px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        background: white;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+            h1 {
+                font-size: 2rem;
+                color: @btnColor;
+            }
+            a {
+                text-decoration: none;
+            }
+            .navLinks {
+                
+                a{
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    margin: 15px;
+                    padding: 15px;
+        
+                    &:hover{
+                        transition: 0.4s;
+                        color: @btnColor;
+                    }
+                }
+            }
+           
+    }
 }

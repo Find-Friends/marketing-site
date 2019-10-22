@@ -152,25 +152,46 @@ h2 {
   width: 100%;
   margin: 0 auto;
 }
-.navBar {
+.outterNav {
+  margin: 0 auto;
   max-width: 1367px;
-  width: 100%;
-  margin: 5px auto;
+}
+.outterNav .navBar {
+  max-width: 1367px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background: white;
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navBar h1 {
-  margin-left: -15px;
+.outterNav .navBar h1 {
   font-size: 2rem;
   color: #89daf5;
 }
-.navBar a {
+.outterNav .navBar a {
+  text-decoration: none;
+}
+.outterNav .navBar .navLinks a {
+  color: black;
   text-decoration: none;
   font-size: 1.2rem;
   margin: 15px;
+  padding: 15px;
+}
+.outterNav .navBar .navLinks a:hover {
+  transition: 0.4s;
+  color: #89daf5;
+}
+.homePage {
+  margin: 30px auto;
 }
 .homePage .mainImg {
+  margin-top: 93px;
   max-height: 750px;
   height: 750px;
   background-image: url(../images/main-img.jpeg);
@@ -224,7 +245,7 @@ h2 {
 .homePage .mainInfo .bottomContent .cardContent {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .homePage .mainInfo .bottomContent .cardContent .cards {
   width: 30%;
