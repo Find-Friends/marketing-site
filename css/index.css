@@ -215,10 +215,6 @@ h2 {
 .homePage {
   margin: 30px auto;
 }
-.homePage #home {
-  max-width: 100px;
-  width: 25%;
-}
 .homePage .mainImg {
   margin-top: 73px;
   max-height: 750px;
