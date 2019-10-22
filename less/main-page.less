@@ -1,7 +1,7 @@
 .homePage {
     margin: 30px auto;
     .mainImg {
-        margin-top: 93px;
+        margin-top: 73px;
         max-height: 750px;
         height: 750px;
         background-image: url(../images/main-img.jpeg);
@@ -9,6 +9,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media @mobile {
+            max-width: 500px;
+        }
     }
     .middleText {
         max-width: 1000px;
@@ -17,6 +21,10 @@
         border: 1px solid @borderColor;
         background: @bgColor;
 
+        @media @mobile {
+            max-width: 500px;
+        }
+
             h2 {
                     margin: 25px;                
             }
@@ -24,9 +32,18 @@
                     margin: 10px;
                     font-size: 1.3rem;
             }
-            button{
+            .mainBtns{
                     margin: 20px 10px;
-                    .customBtn(40px, 130px, @btnColor, @btnTextColor,@borderColor,1.3rem)
+                    display: flex;
+                    justify-content: space-evenly;
+                    
+                    .btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .customBtn(40px, 130px, @btnColor, @btnTextColor,@borderColor,1.3rem)
+                    }
+                    
             }
     }
 
@@ -44,15 +61,24 @@
                 justify-content: space-between;
     
                 .cardContent {
+                    padding: 0 10px;
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+
+                    @media @mobile {
+                        flex-direction: column;
+                    }
 
                     .cards {
                         width: 30%;
                         text-align: center;
                         display: flex;
                         flex-direction: column;
+
+                        @media @mobile {
+                            width: 100%;
+                        }
                             
                             img {
                                 width: 100%;
@@ -60,22 +86,54 @@
                              p{
                                 margin-top: 5%;
                             }
+
+                            .buttonSection {
+                                display: flex;
+                                justify-content: center;
+                                margin: 25px 0;
+                               
+                                .button {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    .customBtn(60px, 150px,@btnColor, @btnTextColor,@borderColor, 1.1rem)
+                                }
+
+                            }  
                     } 
                 }
             }
 
-            .buttons {
-                margin: 25px 0;
-                display: flex;
-                justify-content: space-around;
-                .button {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .customBtn(60px, 150px,@btnColor, @btnTextColor,@borderColor, 1.1rem)
-                }
-            }
+            // .buttons {
+            //     margin: 25px 0;
+            //     display: flex;
+            //     justify-content: space-between;
+            //     // padding: 0 10%;
+
+            //     .firstBtn {
+            //         width: 30%;
+            //         display: flex;
+            //         justify-content: center;
+            //     }
+            //     .secondBtn {
+            //         width: 30%;
+            //         display: flex;
+            //         justify-content: center;
+            //     }
+            //     .thirdBtn {
+            //         width: 30%;
+            //         display: flex;
+            //         justify-content: center;
+            //     }
+            //     .button {
+            //         width: 100%;
+            //         display: flex;
+            //         align-items: center;
+            //         justify-content: center;
+            //         .customBtn(60px, 150px,@btnColor, @btnTextColor,@borderColor, 1.1rem)
+            //     }
+            // }
     }  
        
 }
