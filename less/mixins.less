@@ -1,9 +1,10 @@
-.customBtn {
+.customBtn(@height, @width, @bgColor, @txtColor,@bordColor,@fontSize) {
     text-align: center;
-    border: 1px solid black;
-    background: lightblue;
-    black: white;;
-    width: 115px;
-    height: 35px;
-    font-size: 1.3rem;
+    border: 1px solid @bordColor;
+    border-radius: 15px;
+    color: @txtColor;
+    background: @bgColor;
+    width: @width;
+    height: @height;
+    font-size: @fontSize;
 }
