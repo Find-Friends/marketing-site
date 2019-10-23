@@ -374,16 +374,15 @@ h2 {
 }
 header {
   max-width: 1367px;
-  margin: 80px auto;
+  margin: 80px auto 0 auto;
   font-size: 3rem;
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
   color: #89daf5;
-  padding-bottom: 30px;
 }
 .aboutPage {
   max-width: 1367px;
-  margin: 0 auto 50px auto;
+  margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
