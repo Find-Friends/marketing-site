@@ -5,10 +5,32 @@ footer {
     padding: 25px;
     background: @btnColor;
 
-        .footerNav {
-            // margin-top: 20px;
-            // margin-bottom: 5px;
 
+        .footerLogo {
+            width:40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+
+            @media @mobile {
+                width: 50%;
+            }
+
+                display: flex;
+                .logoPic {
+                    width: 45px;
+                    padding-right: 10px;
+                }
+                h3 {
+                    margin-top: 8px;
+                    font-size: 1.8rem;
+                    font-family: @headerFont;
+                    color: #333;
+            }
+            
+        }
+        .footerNav {
                 a {
                     text-decoration: none;
                     color: @btnTextColor;

@@ -237,6 +237,7 @@ h2 {
   max-width: 1000px;
   max-height: 1000px;
   text-align: center;
+  font-family: 'Fjalla One', sans-serif;
   border: 1px solid #c2c1c1;
   background: #d4d4d4d7;
 }
@@ -265,7 +266,7 @@ h2 {
   background: #89daf5;
   width: 130px;
   height: 40px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .homePage .middleText .mainBtns .btn:hover {
   background: #333;
@@ -355,6 +356,28 @@ footer {
   align-items: center;
   padding: 25px;
   background: #89daf5;
+}
+footer .footerLogo {
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  display: flex;
+}
+@media (max-width: 627px) {
+  footer .footerLogo {
+    width: 50%;
+  }
+}
+footer .footerLogo .logoPic {
+  width: 45px;
+  padding-right: 10px;
+}
+footer .footerLogo h3 {
+  margin-top: 8px;
+  font-size: 1.8rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #333;
 }
 footer .footerNav a {
   text-decoration: none;
