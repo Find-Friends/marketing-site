@@ -34,11 +34,18 @@
                     justify-content: space-evenly;
                     
                     .btn {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-family: @h2Font;
-                        .customBtn(40px, 130px, @btnColor, @btnTextColor,@borderColor,1.1rem)
+                        // display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+
+                            a{
+                                .customBtn(40px, 130px, @btnColor, @btnTextColor,@borderColor,1.1rem);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: @h2Font;
+                                text-decoration: none;
+                            }
                     }
                     
             }
@@ -101,12 +108,16 @@
                                 margin: 25px 0;
                                
                                 .button {
-                                    width: 100%;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    font-family: @h2Font;
-                                    .customBtn(45px, 150px, @btnColor, @btnTextColor,@borderColor, 1.1rem)
+
+                                        a{
+                                            font-family: @h2Font;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-family: @h2Font;
+                                            text-decoration: none;
+                                            .customBtn(45px, 130px, @btnColor, @btnTextColor,@borderColor,1.1rem);
+                                        }
                                 }
 
                             }  

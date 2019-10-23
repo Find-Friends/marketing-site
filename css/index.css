@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFrOF6lw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Zilla Slab'), local('ZillaSlab-Regular'), url(https://fonts.gstatic.com/s/zillaslab/v5/dFa6ZfeM_74wlPZtksIFajo6-A.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -254,11 +275,7 @@ h2 {
   display: flex;
   justify-content: space-evenly;
 }
-.homePage .middleText .mainBtns .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Fjalla One', sans-serif;
+.homePage .middleText .mainBtns .btn a {
   text-align: center;
   border: 1px solid #c2c1c1;
   border-radius: 15px;
@@ -267,8 +284,13 @@ h2 {
   width: 130px;
   height: 40px;
   font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
 }
-.homePage .middleText .mainBtns .btn:hover {
+.homePage .middleText .mainBtns .btn a:hover {
   background: #333;
   color: #89daf5;
   transition: 0.45s;
@@ -330,27 +352,49 @@ h2 {
   justify-content: center;
   margin: 25px 0;
 }
-.homePage .mainInfo .bottomContent .cardContent .cards .buttonSection .button {
-  width: 100%;
+.homePage .mainInfo .bottomContent .cardContent .cards .buttonSection .button a {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
   text-align: center;
   border: 1px solid #c2c1c1;
   border-radius: 15px;
   color: #333;
   background: #89daf5;
-  width: 150px;
+  width: 130px;
   height: 45px;
   font-size: 1.1rem;
 }
-.homePage .mainInfo .bottomContent .cardContent .cards .buttonSection .button:hover {
+.homePage .mainInfo .bottomContent .cardContent .cards .buttonSection .button a:hover {
   background: #333;
   color: #89daf5;
   transition: 0.45s;
 }
+header {
+  margin: 80px;
+  font-size: 3rem;
+  text-align: center;
+}
+.aboutPage {
+  max-width: 1367px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border: 1px solid black;
+}
+.aboutPage .teamMembers {
+  width: 48%;
+  margin-bottom: 40px;
+}
+.aboutPage .teamMembers img {
+  width: 300px;
+}
 footer {
+  max-width: 1367px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -358,7 +402,7 @@ footer {
   background: #89daf5;
 }
 footer .footerLogo {
-  width: 40%;
+  width: 45%;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
@@ -366,15 +410,15 @@ footer .footerLogo {
 }
 @media (max-width: 627px) {
   footer .footerLogo {
-    width: 50%;
+    width: 55%;
   }
 }
 footer .footerLogo .logoPic {
   width: 45px;
   padding-right: 10px;
 }
-footer .footerLogo h3 {
-  margin-top: 8px;
+footer .footerLogo p {
+  margin-top: 5px;
   font-size: 1.8rem;
   font-family: 'Permanent Marker', cursive;
   color: #333;
