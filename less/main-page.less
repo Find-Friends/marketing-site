@@ -36,6 +36,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        font-family: @h2Font;
                         .customBtn(40px, 130px, @btnColor, @btnTextColor,@borderColor,1.3rem)
                     }
                     
@@ -47,12 +48,14 @@
            
             h2 {
                 font-family: @h2Font;
+                font-size: 2rem;
                 text-align: center;
                 margin-bottom: 25px;
 
                 @media @mobile {
                     width: 100%;
-                    font-size: 1.9rem;
+                    font-size: 1.7rem;
+                    padding: 0 10px;
                 }
             }
 
@@ -101,6 +104,7 @@
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                    font-family: @h2Font;
                                     .customBtn(45px, 150px, @btnColor, @btnTextColor,@borderColor, 1.1rem)
                                 }
 

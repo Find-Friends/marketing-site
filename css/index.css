@@ -137,6 +137,7 @@ body {
   font-family: sans-serif;
   font-size: 1rem;
   color: #333;
+  font-family: 'Zilla Slab', serif;
 }
 h1,
 h2,
@@ -202,8 +203,9 @@ h2 {
 }
 .outterNav .navBar .navLinks a {
   color: black;
+  font-family: 'Fjalla One', sans-serif;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 15px;
   padding: 15px;
 }
@@ -255,6 +257,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Fjalla One', sans-serif;
   text-align: center;
   border: 1px solid #c2c1c1;
   border-radius: 15px;
@@ -274,13 +277,15 @@ h2 {
 }
 .homePage .mainInfo h2 {
   font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 25px;
 }
 @media (max-width: 627px) {
   .homePage .mainInfo h2 {
     width: 100%;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+    padding: 0 10px;
   }
 }
 .homePage .mainInfo .bottomContent {
@@ -329,6 +334,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Fjalla One', sans-serif;
   text-align: center;
   border: 1px solid #c2c1c1;
   border-radius: 15px;
@@ -350,14 +356,11 @@ footer {
   padding: 25px;
   background: #89daf5;
 }
-footer .footerNav {
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
 footer .footerNav a {
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 footer p {
-  color: #d4d4d4d7;
+  color: #333;
+  padding-top: 10px;
 }
