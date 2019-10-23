@@ -188,6 +188,7 @@ h2 {
   }
 }
 .outterNav .navBar h1 {
+  font-family: 'Permanent Marker', cursive;
   padding-left: 10px;
   font-size: 2rem;
   color: #89daf5;
@@ -200,6 +201,9 @@ h2 {
 }
 .outterNav .navBar a {
   text-decoration: none;
+}
+.outterNav .navBar .navLinks {
+  margin-top: 20px;
 }
 .outterNav .navBar .navLinks a {
   color: black;
@@ -216,6 +220,8 @@ h2 {
   margin: 30px auto;
 }
 .homePage .mainImg {
+  max-width: 100%;
+  width: 1367px;
   margin-top: 73px;
   max-height: 750px;
   height: 750px;
@@ -228,12 +234,14 @@ h2 {
 .homePage .middleText {
   max-width: 1000px;
   max-height: 1000px;
+  padding: 3%;
   text-align: center;
   border: 1px solid #c2c1c1;
   background: #d4d4d4d7;
 }
 .homePage .middleText h2 {
   margin: 25px;
+  font-family: 'Fjalla One', sans-serif;
 }
 .homePage .middleText p {
   margin: 10px;
@@ -258,7 +266,6 @@ h2 {
   font-size: 1.3rem;
 }
 .homePage .middleText .mainBtns .btn:hover {
-  transition: 0.25s;
   background: black;
   color: #89daf5;
 }
@@ -266,6 +273,7 @@ h2 {
   margin-top: 20px;
 }
 .homePage .mainInfo h2 {
+  font-family: 'Fjalla One', sans-serif;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -325,7 +333,6 @@ h2 {
   font-size: 1.1rem;
 }
 .homePage .mainInfo .bottomContent .cardContent .cards .buttonSection .button:hover {
-  transition: 0.25s;
   background: black;
   color: #89daf5;
 }
@@ -333,6 +340,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 25px;
+  background: #89daf5;
 }
 footer .footerNav {
   margin-top: 20px;

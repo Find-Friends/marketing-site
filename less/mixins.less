@@ -1,4 +1,4 @@
-.customBtn(@height, @width, @bgColor, @txtColor,@bordColor,@fontSize) {
+.customBtn(@height, @width, @bgColor, @txtColor,@bordColor,@fontSize, @btnHover: @txtColor, @btnHovText: @bgColor) {
     text-align: center;
     border: 1px solid @bordColor;
     border-radius: 15px;
@@ -9,8 +9,8 @@
     font-size: @fontSize;
 
     &:hover {
-        transition: 0.25s;
-        background: @txtColor;
-        color: @bgColor;
+        background: @btnHover;
+        color: @btnHovText;
     }
+
 }
