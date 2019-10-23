@@ -5,6 +5,10 @@ header {
     text-align: center;
     font-family: @h2Font;
     color: @btnColor;
+
+    @media @mobile {
+        margin-top: 130px;
+    }
 }
 .aboutPage {
     max-width: 1367px;
@@ -16,9 +20,18 @@ header {
     border-bottom: 3px solid @borderColor;
     border-top: 3px solid @borderColor;
 
+    @media @tablet {
+        flex-direction: column;
+    }
+
         .teamMembers {
             width: 47%;
             margin-bottom: 40px;
+            
+            @media @tablet {
+                max-width: 100%;
+                width: 100%;
+            }
             
             img {
                 margin-bottom: 25px;
