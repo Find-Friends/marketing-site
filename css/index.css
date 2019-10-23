@@ -259,6 +259,7 @@ h2 {
   max-height: 1000px;
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
+  padding: 0 25px;
   border: 1px solid #c2c1c1;
   background: #d4d4d4d7;
 }
@@ -377,13 +378,15 @@ header {
   margin: 80px auto 0 auto;
   font-size: 3rem;
   text-align: center;
-  font-family: 'Fjalla One', sans-serif;
-  color: #89daf5;
 }
 @media (max-width: 627px) {
   header {
     margin-top: 130px;
   }
+}
+header .aboutHead {
+  font-family: 'Fjalla One', sans-serif;
+  color: #89daf5;
 }
 .aboutPage {
   max-width: 1367px;
