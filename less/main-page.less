@@ -3,7 +3,7 @@
     .mainImg {
         max-width: 100%;
         width: 1367px;
-        margin-top: 73px;
+        margin-top: 56px;
         max-height: 750px;
         height: 750px;
         background-image: url(../images/main-img.jpeg);
@@ -15,7 +15,6 @@
     .middleText {
         max-width: 1000px;
         max-height: 1000px;
-        padding: 3%;
         text-align: center;
         border: 1px solid @borderColor;
         background: @bgColor;
@@ -50,6 +49,11 @@
                 font-family: @h2Font;
                 text-align: center;
                 margin-bottom: 25px;
+
+                @media @mobile {
+                    width: 100%;
+                    font-size: 1.9rem;
+                }
             }
 
             .bottomContent {
@@ -97,7 +101,7 @@
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
-                                    .customBtn(60px, 150px,@btnColor, @btnTextColor,@borderColor, 1.1rem)
+                                    .customBtn(45px, 150px, @btnColor, @btnTextColor,@borderColor, 1.1rem)
                                 }
 
                             }  
