@@ -240,7 +240,7 @@ h2 {
   color: #89daf5;
 }
 .homePage {
-  margin: 30px auto;
+  margin: 58px auto;
 }
 .homePage .mainImg {
   max-width: 100%;
@@ -252,6 +252,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 7px;
 }
 .homePage .middleText {
   max-width: 1000px;
@@ -344,6 +345,7 @@ h2 {
 }
 .homePage .mainInfo .bottomContent .cardContent .cards img {
   width: 100%;
+  border-radius: 7px;
 }
 .homePage .mainInfo .bottomContent .cardContent .cards p {
   margin-top: 5%;
@@ -378,15 +380,13 @@ h2 {
   margin: 80px auto 0 auto;
   font-size: 3rem;
   text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  color: #89daf5;
 }
 @media (max-width: 627px) {
   .aboutHead {
     margin-top: 130px;
   }
-}
-.aboutHead .aboutHead {
-  font-family: 'Fjalla One', sans-serif;
-  color: #89daf5;
 }
 .aboutPage {
   max-width: 1367px;
