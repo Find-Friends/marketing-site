@@ -1,0 +1,46 @@
+footer {
+    max-width: 1367px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background: @btnColor;
+
+
+        .footerLogo {
+            width:60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+
+            @media @mobile {
+                width: 55%;
+            }
+
+                display: flex;
+                .logoPic {
+                    width: 45px;
+                    padding-right: 10px;
+                }
+                p {
+                    margin-top: 5px;
+                    font-size: 1.8rem;
+                    font-family: @headerFont;
+                    color: #333;
+            }
+            
+        }
+        .footerNav {
+                a {
+                    text-decoration: none;
+                    color: @btnTextColor;
+                }
+        }
+
+        p {
+            color: @btnTextColor;
+            padding-top: 10px;
+        }
+}

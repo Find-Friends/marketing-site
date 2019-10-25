@@ -1,0 +1,67 @@
+
+.outterNav {
+    margin: 0 auto;
+    .navBar{
+        max-width: 1367px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        background: white;
+        padding: 0 0 12px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media @mobile {
+            flex-direction: column;
+        }
+    
+            .logoAndName {
+                display: flex;
+                align-items: center;
+
+                @media @mobile {
+                    margin-top: 10px;
+                }
+            }
+            .logoPic {
+                max-width: 35px;
+                margin-left: 10px;
+            }
+            h1 {
+                font-family: @headerFont;
+                padding-left: 10px;
+                font-size: 2rem;
+                color: @btnColor;
+                margin-top: 12px;
+            }
+            a {
+                text-decoration: none;
+            }
+            .navLinks {
+
+                margin-top: 20px;
+                
+                a{
+                    color: black;
+                    font-family: @h2Font;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    margin: 15px;
+                    padding: 15px;
+
+                    @media @mobile {
+                        font-size: 0.95rem;
+                    }
+        
+                    &:hover{
+                        transition: 0.4s;
+                        color: @btnColor;
+                    }
+                }
+            }
+           
+    }
+}

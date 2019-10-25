@@ -1,0 +1,134 @@
+.homePage {
+    margin: 58px auto;
+    .mainImg {
+        max-width: 100%;
+        width: 1367px;
+        // margin-top: 56px;
+        max-height: 750px;
+        height: 750px;
+        background-image: url(../images/main-img.jpeg);
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+    }
+    .middleText {
+        max-width: 1000px;
+        max-height: 1000px;
+        text-align: center;
+        font-family: @h2Font;
+        padding: 0 25px;
+        border: 1px solid @borderColor;
+        background: @bgColor;
+
+            h2 {
+                    margin: 25px;        
+                    font-family: @h2Font;        
+            }
+            p {
+                    margin: 10px;
+                    font-size: 1.3rem;
+                    line-height: 25px;
+            }
+            .mainBtns{
+                    margin: 20px 10px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    
+                    .btn {
+                        // display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+
+                            a{
+                                .customBtn(40px, 130px, @btnColor, @btnTextColor,@borderColor,1.1rem);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: @h2Font;
+                                text-decoration: none;
+                            }
+                    }
+                    
+            }
+    }
+
+    .mainInfo {
+        margin-top: 20px;
+           
+            h2 {
+                font-family: @h2Font;
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 25px;
+
+                @media @mobile {
+                    width: 100%;
+                    font-size: 1.7rem;
+                    padding: 0 10px;
+                }
+            }
+
+            .bottomContent {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+    
+                .cardContent {
+                    padding: 0 10px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.2rem;
+
+                    @media @mobile {
+                        flex-direction: column;
+                    }
+
+                    .cards {
+                        width: 30%;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+
+                        @media @mobile {
+                            width:95%;
+                            margin: 0 auto;
+                            padding: 0 3%;
+                        }
+                            
+                            img {
+                                width: 100%;
+                                border-radius: 7px;
+                            }
+                             p{
+                                margin-top: 5%;
+                            }
+
+                            .buttonSection {
+                                display: flex;
+                                justify-content: center;
+                                margin: 25px 0;
+                               
+                                .button {
+
+                                        a{
+                                            font-family: @h2Font;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-family: @h2Font;
+                                            text-decoration: none;
+                                            .customBtn(45px, 130px, @btnColor, @btnTextColor,@borderColor,1.1rem);
+                                        }
+                                }
+
+                            }  
+                    } 
+                }
+            }
+
+    }  
+       
+}

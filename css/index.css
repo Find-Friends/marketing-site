@@ -1,0 +1,472 @@
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFrOF6lw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Zilla Slab'), local('ZillaSlab-Regular'), url(https://fonts.gstatic.com/s/zillaslab/v5/dFa6ZfeM_74wlPZtksIFajo6-A.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #333;
+  font-family: 'Zilla Slab', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: sans-serif;
+}
+h2 {
+  font-size: 2.5rem;
+}
+.container {
+  max-width: 1367px;
+  width: 100%;
+  margin: 0 auto;
+}
+.outterNav {
+  margin: 0 auto;
+}
+.outterNav .navBar {
+  max-width: 1367px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background: white;
+  padding: 0 0 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 627px) {
+  .outterNav .navBar {
+    flex-direction: column;
+  }
+}
+.outterNav .navBar .logoAndName {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 627px) {
+  .outterNav .navBar .logoAndName {
+    margin-top: 10px;
+  }
+}
+.outterNav .navBar .logoPic {
+  max-width: 35px;
+  margin-left: 10px;
+}
+.outterNav .navBar h1 {
+  font-family: 'Permanent Marker', cursive;
+  padding-left: 10px;
+  font-size: 2rem;
+  color: #89daf5;
+  margin-top: 12px;
+}
+.outterNav .navBar a {
+  text-decoration: none;
+}
+.outterNav .navBar .navLinks {
+  margin-top: 20px;
+}
+.outterNav .navBar .navLinks a {
+  color: black;
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 15px;
+  padding: 15px;
+}
+@media (max-width: 627px) {
+  .outterNav .navBar .navLinks a {
+    font-size: 0.95rem;
+  }
+}
+.outterNav .navBar .navLinks a:hover {
+  transition: 0.4s;
+  color: #89daf5;
+}
+.homePage {
+  margin: 58px auto;
+}
+.homePage .mainImg {
+  max-width: 100%;
+  width: 1367px;
+  max-height: 750px;
+  height: 750px;
+  background-image: url(../images/main-img.jpeg);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+.homePage .middleText {
+  max-width: 1000px;
+  max-height: 1000px;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 0 25px;
+  border: 1px solid #c2c1c1;
+  background: #d4d4d4d7;
+}
+.homePage .middleText h2 {
+  margin: 25px;
+  font-family: 'Fjalla One', sans-serif;
+}
+.homePage .middleText p {
+  margin: 10px;
+  font-size: 1.3rem;
+  line-height: 25px;
+}
+.homePage .middleText .mainBtns {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.homePage .middleText .mainBtns .btn a {
+  text-align: center;
+  border: 1px solid #c2c1c1;
+  border-radius: 15px;
+  color: #333;
+  background: #89daf5;
+  width: 130px;
+  height: 40px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+}
+.homePage .middleText .mainBtns .btn a:hover {
+  background: #333;
+  color: #89daf5;
+  transition: 0.45s;
+}
+.homePage .mainInfo {
+  margin-top: 20px;
+}
+.homePage .mainInfo h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+@media (max-width: 627px) {
+  .homePage .mainInfo h2 {
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 0 10px;
+  }
+}
+.homePage .mainInfo .bottomContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.homePage .mainInfo .bottomContent .cardContent {
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+@media (max-width: 627px) {
+  .homePage .mainInfo .bottomContent .cardContent {
+    flex-direction: column;
+  }
+}
+.homePage .mainInfo .bottomContent .cardContent .cards {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 627px) {
+  .homePage .mainInfo .bottomContent .cardContent .cards {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 3%;
+  }
+}
+.homePage .mainInfo .bottomContent .cardContent .cards img {
+  width: 100%;
+  border-radius: 7px;
+}
+.homePage .mainInfo .bottomContent .cardContent .cards p {
+  margin-top: 5%;
+}
+.homePage .mainInfo .bottomContent .cardContent .cards .buttonSection {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+.homePage .mainInfo .bottomContent .cardContent .cards .buttonSection .button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #c2c1c1;
+  border-radius: 15px;
+  color: #333;
+  background: #89daf5;
+  width: 130px;
+  height: 45px;
+  font-size: 1.1rem;
+}
+.homePage .mainInfo .bottomContent .cardContent .cards .buttonSection .button a:hover {
+  background: #333;
+  color: #89daf5;
+  transition: 0.45s;
+}
+.aboutHead {
+  max-width: 1367px;
+  margin: 80px auto 0 auto;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  color: #89daf5;
+}
+@media (max-width: 627px) {
+  .aboutHead {
+    margin-top: 130px;
+  }
+}
+.aboutPage {
+  max-width: 1367px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 50px 0 0 0;
+  border-bottom: 3px solid #c2c1c1;
+  border-top: 3px solid #c2c1c1;
+}
+@media (max-width: 750px) {
+  .aboutPage {
+    flex-direction: column;
+  }
+}
+.aboutPage .teamMembers {
+  width: 47%;
+  margin-bottom: 40px;
+}
+@media (max-width: 750px) {
+  .aboutPage .teamMembers {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.aboutPage .teamMembers img {
+  margin-bottom: 25px;
+  width: 300px;
+}
+.aboutPage .teamMembers h3 {
+  font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+.aboutPage .teamMembers h4 {
+  font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+.aboutPage .teamMembers p {
+  font-size: 1.2rem;
+  padding: 0 100px;
+}
+footer {
+  max-width: 1367px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  background: #89daf5;
+}
+footer .footerLogo {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  display: flex;
+}
+@media (max-width: 627px) {
+  footer .footerLogo {
+    width: 55%;
+  }
+}
+footer .footerLogo .logoPic {
+  width: 45px;
+  padding-right: 10px;
+}
+footer .footerLogo p {
+  margin-top: 5px;
+  font-size: 1.8rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #333;
+}
+footer .footerNav a {
+  text-decoration: none;
+  color: #333;
+}
+footer p {
+  color: #333;
+  padding-top: 10px;
+}
